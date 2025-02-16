@@ -61,10 +61,143 @@
 // приклад рядка, що має вийти
 // The last letter in my favorite game's name "minecraft" is "T" !
 
-const myFavoriteGameName = prompt("what is your favorite game");
-const myFavoriteGameTextToLowwerCase = myFavoriteGameName.toLowerCase();
-const isLetterOfRow = myFavoriteGameName[myFavoriteGameName.length - 1];
-const lastChar = `${isLetterOfRow.toUpperCase()}!`
+// const myFavoriteGameName = prompt("what is your favorite game");
+// const myFavoriteGameTextToLowwerCase = myFavoriteGameName.toLowerCase();
+// const isLetterOfRow = myFavoriteGameName[myFavoriteGameName.length - 1];
+// const lastChar = `${isLetterOfRow.toUpperCase()}!`
 
-console.log(lastChar);
+// console.log(lastChar);
 
+// 
+
+
+// Subscription  if ()
+// let cost = 0;
+// const subsccription = "free";
+// const subsccription = "vip";
+
+
+// console.log(cost);
+// if (subsccription === "pro"  ||  subsccription === "vip") {
+//   cost = 100;
+// }
+// console.log(cost)
+
+// if else
+
+// const grade1 = 60;
+
+// if (grade1 > 60) {
+//   console.log("Satisfactorily");
+// } else {
+//   console.log("Unsatisfactorily");
+// }
+
+// if 
+// else if 
+// else
+
+// const Grade1 = 100;
+
+// if (Grade1 >= 90) {
+//   console.log("Perfect");
+// } else if (Grade1 >= 80) {
+//   console.log("Good");
+// } else if (Grade1 >= 70) {
+//   console.log("Satisfactorily");
+// } else {
+//   console.log("Unsatisfactorily");
+// }
+
+// Задача в залежності від підписки виводити вартість
+// "free" 0;
+// "pro"100;
+// "premium" 500;
+//  погане значення "Invalid subscription type"
+
+let cost2;
+const subscription2 = "premium";
+
+if (subscription2 === "free") {
+  cost2 = 0;
+  console.log(cost2);
+} else if (subscription2 === "pro") {
+  cost2 = 100;
+  console.log(cost2);
+} else if (subscription2 === "premium") {
+  cost2 = 500;
+  console.log(cost2)
+} else {
+  console.log("Ivalid valaue");
+}
+
+
+// console.log(cost2);
+
+
+//1  Що буде в консолі
+if ("0") {
+  //  console.log( 'Привіт' );
+  }
+// 2
+  // Використовуючи if..else, напишіть код, що отримує число  
+// і потім виводить повідомлення на екран:
+
+// 1, якщо значення більше нуля,
+// -1, якщо меньше нуля,
+// 0, якщо дорівнює нулю.
+const userNumber = 0;
+
+
+if (userNumber > 0) {
+  console.log(1);
+} else if (userNumber < 0) {
+  console.log(-1);
+} else if (userNumber === 0){
+  console.log(0);
+} else {
+  console.log("Invalid value");
+}
+
+//   Якщо відвідувач вводить “ECMAScript”, виведіть “Правильно!”, 
+//   в іншому випадку — виведіть: “Ви не знаєте? ECMAScript!”
+const userInput = "jnoik";
+// const userInput = "EcMAScriPt";
+
+if (userInput.toLowerCase === "ECMASCRIPT") {
+  console.log("Правильно!");
+} else {
+  console.log("Ви не знаєте? ECMAScript!");
+}
+
+if (userInput.toLowerCase() === "ECMAScript".toLowerCase()) {
+	console.log('Правильно!')
+}
+else {
+	console.log('Ви не знаєте? ECMAScript!')
+};
+
+// task 1
+
+const num1 = 5;
+const num2 = 10;
+let biggerNumber;
+
+if (num1 > num2) {
+    biggerNumber = num1;
+    console.log(num1);
+}  else if (num2 > num1) {
+    biggerNumber = num2;
+    console.log(num2);
+}  else {
+    console.log("draw, equal");
+}
+
+// task 2
+
+let type;
+const age = 20;
+
+if (age > 18) {
+  type = "adult"
+} else { type = "child" } 
