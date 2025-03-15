@@ -70,14 +70,14 @@ const array3 = [10, 25, 13, 44, 15];
 // Вивести в консоль всі елементи масиву за допомогою 
 // циклів for та for…of.
 
-for (let i = 0; i < array3.length; i+=1){
-  console.log(`Element: ${array3[i]}`);
-}
+// for (let i = 0; i < array3.length; i+=1){
+//   console.log(`Element: ${array3[i]}`);
+// }
 
 
-for (const elemet of array3){
-  console.log(elemet);
-}
+// for (const elemet of array3){
+//   console.log(elemet);
+// }
 // 2
 // Порахувати загальну суму покупок в корзині за допомогою 
 // циклів for та for…of.
@@ -114,11 +114,22 @@ let totalNum = 0;
 // console.log(totalNum);
 
 
-for (const amount of numberArr) {
-  if (amount % 2 === 1) {
-    continue
-  }
-  console.log(amount);
-  totalNum += amount;
+// for (const amount of numberArr) {
+//   if (amount % 2 === 1) {
+//     continue
+//   }
+//   console.log(amount);
+//   totalNum += amount;
+// }
+// console.log(totalNum);
+
+// factorial 
+
+const numberOfUser = Number(prompt("Enter a value of factorial: "))
+let theSumOfFactorialsNumber = 1;
+
+for (let i = 1; i <= numberOfUser; i+=1) {
+  theSumOfFactorialsNumber *= i;
+  // console.log(theSumOfFactorialsNumber);
 }
-console.log(totalNum);
+console.log(theSumOfFactorialsNumber);
