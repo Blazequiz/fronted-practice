@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-update {
+        font-size: large;
+        color: aqua;
+      }
+      .greating {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 30px;
+            background-color: bisque;
+            display: none;
+            /* display: block; */
+        }
+        .blackTopic {
+          background-color: #252525;
+        }
+        #startBtn {
+          cursor: pointer;
+          padding: 27px;
+          border: #252525 solid 2px;
+          background-color: transparent;
+          border-radius: 50px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #stopBtn {
+          cursor: pointer;
+          padding: 27px;
+          border: #252525 solid 2px;
+          background-color: transparent;
+          border-radius: 50px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #randomColorBtn {
+          padding: 40px;
+          border: none;
+          cursor: pointer;
+        }
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f7f7f7;
+          padding: 30px;
+        }
+
+        .todo-container {
+          max-width: 400px;
+          margin: auto;
+          padding: 20px;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+
+        .todo-form {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+
+        .todo-form input {
+          flex-grow: 1;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 16px;
+        }
+
+        .todo-form button {
+          padding: 8px 12px;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .todo-form button:hover {
+          background-color: #45a049;
+        }
+
+        .todo-list {
+          list-style: none;
+          padding: 0;
+        }
+
+        .todo-list li {
+          padding: 8px 12px;
+          border-bottom: 1px solid #ddd;
+          cursor: pointer;
+          transition: 0.2s;
+        }
+
+        .todo-list li:hover {
+          background-color: #f0f0f0;
+        }
+
+        .todo-list li.done {
+          text-decoration: line-through;
+          color: gray;
+        }
+
+        .delete-done-btn {
+          margin-top: 15px;
+          width: 100%;
+          padding: 8px;
+          background-color: #e53935;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .delete-done-btn:hover {
+          background-color: #c62828;
+        }
+        .done {
+          text-decoration: line-through;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="changeBtn">change topic</button>
+    </div>
+    <!-- 1. Напишіть скрипт зміни кольору кнопки при натискані на неї. -->
+
+    <!-- // 2. Напиши скрипт реалізації додавання класу до заголовка при кліку на кнопку ‘Додати стилі’. -->
+    <!-- frontend-mentor frontend-mentor -->
+    <div>
+      <p>1</p>
+      <button type="button" class="js-btn">Тицьни мене</button>
+    </div>
+    <div>
+      <p>2</p>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
+        pariatur totam.
+      </p>
+      <button type="button" class="js-add-style-btn">
+        Додати/прибрати стилі
+      </button>
+    </div>
+    <div>
+        <p>4</p>
+        <form class="form">
+            <label style="display: flex; align-items: center;">
+                Name
+                <input type="text" name="name">
+            </label>
+            <label style="display: flex; align-items: center;">
+                Surname
+                <input type="text" name="surname">
+            </label>
+            <button type="submit">submit</button>
+        </form>
+        <p class="greating">Ви зареєструвалися успішно! Дякую!</p>
+
+        <!--  -->
+<form class="fonts-form">
+  <label><input type="radio" name="style" value="bold"> Жирний</label>
+  <label><input type="radio" name="style" value="italic"> Курсив</label>
+  <label><input type="radio" name="style" value="underline"> Підкреслений</label>
+</form>
+<p class="paragraph">Тут буде змінюватись стиль</p>
+</form>
+      <div class="counter-container">
+        <button id="startBtn">start</button>
+        <span id="counter-window"></span>
+        <button id="stopBtn">stop</button>
+      </div>
+      <button id="randomColorBtn">click</button>
+      <!--  -->
+      <br>
+      <br>
+      <br>
+      <br>      
+    <div class="todo-container">
+    <h1>Todo list</h1>
+
+    <form class="todo-form">
+      <input type="text" id="todo-input" placeholder="Введи справу..." required />
+      <button type="submit">Додати справу</button>
+    </form>
+    <ul class="todo-list">
+
+    </ul>
+    <button class="delete-done-btn">🗑 Видалити завершені</button>
+  </div>
+    <script src="./DOM/JS-DOM/Events-19.js" type="module"></script>
+  </body>
+</html>
