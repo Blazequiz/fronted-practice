@@ -174,3 +174,26 @@ deleteBtn.addEventListener("click", (event) => {
     item.remove() // видалити з DOM
   })
 })
+
+
+// data 
+
+const items = document.querySelectorAll(".product-list li")
+const buttons = document.querySelectorAll(".buttons button")
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const filter = button.dataset.filter;
+    
+    items.forEach((item) =>{
+      const category = item.dataset.category;
+
+      if(filter === "all" || category === filter) {
+        item.style.display = "list-item"; 
+      } else {
+        item.style.display = "none"; 
+      }
+    })
+  })
+})
+
